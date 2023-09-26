@@ -1,9 +1,15 @@
-import React from "react";
+"use client";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
+import { useForm, ValidationError } from "@formspree/react";
 
 const EmailSection = () => {
+  const [state, handleSubmit] = useForm("https://formspree.io/f/mgejngee");
+  if (state.succeeded) {
+    return <p>Thanks for the Message!</p>;
+  }
+
   return (
     <section
       id="contact"
@@ -44,7 +50,7 @@ const EmailSection = () => {
         </div>
       </div>
       <div className="z-10">
-        <form className="flex flex-col">
+        <form className="flex flex-col" onSubmit={handleSubmit} method="POST">
           <div className="mb-6">
             <label
               htmlFor="email"
@@ -58,6 +64,11 @@ const EmailSection = () => {
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="example@google.com"
+            />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
             />
           </div>
           <div className="mb-6">
@@ -88,9 +99,15 @@ const EmailSection = () => {
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="Let's talk about..."
             />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
           </div>
           <button
             type="submit"
+            disabled={state.submitting}
             className="bg-cyan-500 hover:bg-cyan-600 text-white font-medium py-2.5 px-5 rounded-lg w-full"
           >
             Send Message
