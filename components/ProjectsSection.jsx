@@ -7,7 +7,7 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "Real Estate webSite",
+    title: "Real Estate WebSite",
     description:
       "This project is a real estate project where users can add properties for sale or rent.",
     image: "./images/real-estate-website.PNG",
@@ -27,7 +27,7 @@ const projectsData = [
   },
   {
     id: 3,
-    title: " online Bookshop",
+    title: " Online Bookshop",
     description:
       "A website that enable user to search for a book(s) pay for a period of time and return the book(s) after use",
     image: "./images/e-book.PNG",
