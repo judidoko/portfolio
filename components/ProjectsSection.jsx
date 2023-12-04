@@ -7,6 +7,16 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
+    title: "Real Estate webSite",
+    description:
+      "This project is a real estate project where users can add properties for sale or rent.",
+    image: "./images/real-estate-website.PNG",
+    tag: ["All", "React"],
+    gitUrl: "https://github.com/judidoko/real-estate-website",
+    previewUrl: "https://real-estate-website-judidoko.vercel.app/",
+  },
+  {
+    id: 1,
     title: "Task Management App",
     description:
       "This app allow users to easily Create, organize and track theirs tasks or/and Projects.",
