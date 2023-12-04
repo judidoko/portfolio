@@ -16,7 +16,7 @@ const projectsData = [
     previewUrl: "https://real-estate-website-judidoko.vercel.app/",
   },
   {
-    id: 1,
+    id: 2,
     title: "Task Management App",
     description:
       "This app allow users to easily Create, organize and track theirs tasks or/and Projects.",
@@ -26,7 +26,7 @@ const projectsData = [
     previewUrl: "https://tasks-mgt-app.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: " online Bookshop",
     description:
       "A website that enable user to search for a book(s) pay for a period of time and return the book(s) after use",
@@ -36,7 +36,7 @@ const projectsData = [
     previewUrl: "https://emekabookshop.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Rental Car Service",
     description:
       "A website where user can search for a car of their choice to rental for period of time",
@@ -46,7 +46,7 @@ const projectsData = [
     previewUrl: "https://ija-car-rental.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Movie Box",
     description: "A website that enable user search for movies and watch",
     image: "./images/movie-box.PNG",
@@ -55,7 +55,7 @@ const projectsData = [
     previewUrl: "https://hngxmoviebox-stage2.vercel.app/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Pig Game",
     description:
       "The Pig is a simple dice game in which two players race to reach 100 points. if a player roll 1 or 0 he loose. 2-6 the number is added the current player score. NOTE: it can only be played on laptop and desktop devices",
