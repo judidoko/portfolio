@@ -20,7 +20,7 @@ const projectsData = [
     title: "Task Management App",
     description:
       "This app allow users to easily Create, organize and track theirs tasks or/and Projects.",
-    image: "./images/task-mgt-app.PNG",
+    image: "./images/task-app.PNG",
     tag: ["All", "React"],
     gitUrl: "https://github.com/judidoko/Task-management-app",
     previewUrl: "https://tasks-mgt-app.netlify.app/",
