@@ -1,6 +1,6 @@
 "use client";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaXTwitter, FaSquareWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
 import { useForm, ValidationError } from "@formspree/react";
 
@@ -25,8 +25,8 @@ const EmailSection = () => {
           developer intern, my inbox is always open. Whether you have a question
           ask me about my skills, I&apos;am always available.
         </p>
-        <div className="text-white mt-4 mb-4">
-          <span className="font-semibold">WhatsApp:</span> 08034665743
+        <div className=" flex items-center gap-2 text-white mt-4 mb-4">
+          <FaSquareWhatsapp className="text-2xl text-green-400" />: 08034665743
         </div>
         <div className="socials flex flex-row gap-4 text-[30px] ">
           <Link

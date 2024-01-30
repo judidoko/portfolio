@@ -9,22 +9,20 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-
       colors: {
-        ...colors,
-        primary: colors.purple,
-        secondary: colors.pink,
-
+        // ...colors,
         stone: colors.warmGray,
         sky: colors.lightBlue,
         neutral: colors.trueGray,
         gray: colors.coolGray,
         slate: colors.blueGray,
+        primary: colors.purple,
+        secondary: colors.pink,
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },

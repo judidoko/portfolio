@@ -9,7 +9,7 @@ const projectsData = [
     id: 1,
     title: "Real Estate WebSite",
     description:
-      "This project is a real estate project where users can add properties for sale or rent.",
+      "This project is a real estate project where users can add their lands/properties for sales or rent.",
     image: "./images/real-estate-website.PNG",
     tag: ["All", "React"],
     gitUrl: "https://github.com/judidoko/real-estate-website",
