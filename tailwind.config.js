@@ -2,6 +2,7 @@
 const colors = require("tailwindcss/colors");
 
 module.exports = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,7 +11,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // ...colors,
+        dark: "#000000",
+        medium: "#293245",
         stone: colors.warmGray,
         sky: colors.lightBlue,
         neutral: colors.trueGray,

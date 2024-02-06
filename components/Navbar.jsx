@@ -1,9 +1,10 @@
 "use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import NavLink from "./NavLink";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import MenuOverlay from "./MenuOverlay";
+import ThemeToggle from "./ThemeToggle";
 
 const navLinks = [
   {
@@ -24,28 +25,32 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-100">
+    <nav className="fixed mx-auto dark:border dark:border-[#33353F] dark:bg-dark top-0 left-0 right-0 z-10 bg-opacity-100">
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
-        <Link
-          href={"/"}
-          className="text-2xl md:text-5xl text-white font-semibold"
-        >
-          JUDDOKO
-        </Link>
+        <div className="flex items-center justify-between gap-4">
+          <Link
+            href={"/"}
+            className="text-2xl md:text-5xl dark:text-white text-dark font-semibold"
+          >
+            JUDDOKO
+          </Link>
+          <ThemeToggle />
+        </div>
+
         <div className="mobile-menu block md:hidden">
           {!navbarOpen ? (
             <button
               onClick={() => setNavbarOpen(true)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 text-cyan-700 hover:text-cyan-900 border border-cyan-500  rounded dark:border-slate-200 dark:text-slate-200 dark:hover:text-white hover:border-white"
             >
               <Bars3Icon className="h-5 w-5" />
             </button>
           ) : (
             <button
               onClick={() => setNavbarOpen(false)}
-              className="flex items-center px-3 py-2 border rounded border-slate-200 text-slate-200 hover:text-white hover:border-white"
+              className="flex items-center px-3 py-2 border border-cyan-500 rounded dark:border-slate-200 dark:text-slate-200 dark:hover:text-white dark:hover:border-white"
             >
-              <XMarkIcon className="h-5 w-5" />
+              <XMarkIcon className="h-5 w-5 text-red-900" />
             </button>
           )}
         </div>
@@ -59,7 +64,9 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      {navbarOpen ? <MenuOverlay links={navLinks} /> : null}
+      {navbarOpen ? (
+        <MenuOverlay links={navLinks} setNavbarOpen={setNavbarOpen} />
+      ) : null}
     </nav>
   );
 };

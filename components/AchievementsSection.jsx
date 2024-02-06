@@ -1,6 +1,4 @@
 "use client";
-import React from "react";
-
 const achievementsList = [
   {
     metric: "Projects",
@@ -23,12 +21,13 @@ const AchievementsSection = () => {
               key={index}
               className="flex flex-col items-center justify-center mx-4 my-4 sm:my-0"
             >
-              <h2 className="text-white text-4xl font-bold flex flex-row">
-                {achievement.prefix}
+              <h2 className="dark:text-white text-dark text-4xl font-bold flex flex-row">
                 {achievement.value}
                 {achievement.postfix}
               </h2>
-              <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
+              <p className="dark:text-[#ADB7BE] text-dark text-sm md:text-base">
+                {achievement.metric}
+              </p>
             </div>
           );
         })}

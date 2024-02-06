@@ -1,6 +1,7 @@
 "use client";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { FaXTwitter, FaSquareWhatsapp } from "react-icons/fa6";
+import { FaSquareWhatsapp, FaXTwitter } from "react-icons/fa6";
+
 import Link from "next/link";
 import { useForm, ValidationError } from "@formspree/react";
 
@@ -15,19 +16,16 @@ const EmailSection = () => {
       id="contact"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
-      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
+      <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] dark:from-cyan-900 dark:to-transparent dark:rounded-full from-cyan-900 to-cyan-200 h-60 md:h-80 w-80 z-0 dark:blur-lg absolute top-[93%] md:top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-0">
-        <h5 className="text-xl font-bold text-white my-2">
+        <h5 className="text-xl font-bold dark:text-white text-dark my-2">
           Let&apos;s Connect
         </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
+        <p className="dark:text-[#ADB7BE] text-dark mb-4 max-w-md">
           I&apos;m currently looking for new opportunities to work as fronted
           developer intern, my inbox is always open. Whether you have a question
           ask me about my skills, I&apos;am always available.
         </p>
-        <div className=" flex items-center gap-2 text-white mt-4 mb-4">
-          <FaSquareWhatsapp className="text-2xl text-green-400" />: 08034665743
-        </div>
         <div className="socials flex flex-row gap-4 text-[30px] ">
           <Link
             href="https://github.com/judidoko"
@@ -50,6 +48,13 @@ const EmailSection = () => {
           >
             <FaXTwitter />
           </Link>
+          <Link
+            href="https://wa.me/+2348034665743?text=Hello Juddoko"
+            target="_blank"
+            className="rounded-full bg-gray-400 p-2"
+          >
+            <FaSquareWhatsapp />
+          </Link>
         </div>
       </div>
       <div className="z-0">
@@ -57,7 +62,7 @@ const EmailSection = () => {
           <div className="mb-6">
             <label
               htmlFor="email"
-              className="text-white block mb-2 text-sm font-medium"
+              className="dark:text-white text-dark block mb-2 text-sm font-medium"
             >
               Your email
             </label>
@@ -77,7 +82,7 @@ const EmailSection = () => {
           <div className="mb-6">
             <label
               htmlFor="subject"
-              className="text-white block text-sm mb-2 font-medium"
+              className="dark:text-white text-dark block text-sm mb-2 font-medium"
             >
               Subject
             </label>
@@ -92,7 +97,7 @@ const EmailSection = () => {
           <div className="mb-6">
             <label
               htmlFor="message"
-              className="text-white block text-sm mb-2 font-medium"
+              className="dark:text-white text-dark block text-sm mb-2 font-medium"
             >
               Message
             </label>
