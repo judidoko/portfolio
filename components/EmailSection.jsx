@@ -43,7 +43,7 @@ const EmailSection = () => {
             <BsLinkedin />
           </Link>
           <Link
-            href="https://twitter.com/judidoko"
+            href="https://x.com/judidoko"
             target="_blank"
             className="rounded-full bg-gray-400 p-2"
           >
