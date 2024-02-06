@@ -22,9 +22,10 @@ const EmailSection = () => {
           Let&apos;s Connect
         </h5>
         <p className="dark:text-[#ADB7BE] text-dark mb-4 max-w-md">
-          I&apos;m currently looking for new opportunities to work as fronted
-          developer intern, my inbox is always open. Whether you have a question
-          ask me about my skills, I&apos;am always available.
+          Are you currently looking for a frontend developer to website more
+          interactive, responsive and easy to navigate? My inbox is always open
+          Whether you have any Frontend question(s) ask me about my skills,
+          I&apos;am always available.
         </p>
         <div className="socials flex flex-row gap-4 text-[30px] ">
           <Link
