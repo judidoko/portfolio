@@ -45,7 +45,7 @@ const EmailSection = () => {
           <Link
             href="https://x.com/judidoko"
             target="_blank"
-            className="rounded-full bg-gray-400 p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+            className="rounded-full bg-dark text-white p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
           >
             <FaXTwitter />
           </Link>
