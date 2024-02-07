@@ -22,37 +22,37 @@ const EmailSection = () => {
           Let&apos;s Connect
         </h5>
         <p className="dark:text-[#ADB7BE] text-dark mb-4 max-w-md">
-          Are you currently looking for a frontend developer to website more
-          interactive, responsive and easy to navigate? My inbox is always open
-          Whether you have any Frontend question(s) ask me about my skills,
-          I&apos;am always available.
+          Are you currently looking for a frontend developer to make your
+          website more interactive, responsive and easy to navigate? My inbox is
+          always open Whether you have any Frontend question(s) ask me about my
+          skills, I am always available.
         </p>
         <div className="socials flex flex-row gap-4 text-[30px] ">
           <Link
             href="https://github.com/judidoko"
             target="_blank"
-            className="rounded-full bg-gray-400 p-2"
+            className="rounded-full bg-gray-400 p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
           >
             <BsGithub />
           </Link>
           <Link
             href="https://www.linkedin.com/in/idoko-jude-201233199"
             target="_blank"
-            className="rounded-full bg-gray-400 p-2"
+            className="rounded-full bg-gray-200 text-[#0e76a8] p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
           >
             <BsLinkedin />
           </Link>
           <Link
             href="https://x.com/judidoko"
             target="_blank"
-            className="rounded-full bg-gray-400 p-2"
+            className="rounded-full bg-gray-400 p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
           >
             <FaXTwitter />
           </Link>
           <Link
             href="https://wa.me/+2348034665743?text=Hello Juddoko"
             target="_blank"
-            className="rounded-full bg-gray-400 p-2"
+            className="rounded-full bg-gray-200 text-[#25D366] p-2 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
           >
             <FaSquareWhatsapp />
           </Link>
