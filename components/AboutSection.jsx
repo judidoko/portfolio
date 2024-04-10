@@ -11,7 +11,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>JavaScript</li>
         <li>React.js</li>
-        <li>next.js</li>
+        <li>Next.js</li>
         <li>TailWind css</li>
       </ul>
     ),
