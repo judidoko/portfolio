@@ -13,6 +13,7 @@ const TAB_DATA = [
         <li>React.js</li>
         <li>Next.js</li>
         <li>TailWind css</li>
+        <li>Scss</li>
       </ul>
     ),
   },
@@ -21,7 +22,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>University of Agriculture, Makurdi, Benue State, Nigeria</li>
+        <li>Bsc Statistic / Computer Science</li>
+        <span>University of Agriculture, Makurdi, Benue State, Nigeria</span>
       </ul>
     ),
   },
@@ -30,7 +32,10 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>In view</li>
+        <li>
+          <b>Front-End Developer Training</b> under the DevCareer Tech Program
+          powered by the UK-Nigeria Tech Hub
+        </li>
       </ul>
     ),
   },
@@ -48,12 +53,12 @@ const AboutSection = () => {
 
   return (
     <section className="dark:text-white text-dark" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-20 xl:px-16">
+      <div className="md:grid md:grid-cols-2 gap-8 py-8 px-4 xl:gap-16 sm:py-20 xl:px-16">
         <Image
           src="/images/about-img.png"
           width={500}
           height={500}
-          className="min-h-full hidden md:flex"
+          className="min-h-[80%] hidden md:flex flex-start"
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold dark:text-white text-dark mb-4">
