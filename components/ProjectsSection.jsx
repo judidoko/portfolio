@@ -94,8 +94,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Nextjs"
-          isSelected={tag === "Nextjs"}
+          name="JavaScript"
+          isSelected={tag === "JavaScript"}
         />
       </div>
       <ul
