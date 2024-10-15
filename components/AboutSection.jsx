@@ -11,7 +11,6 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>JavaScript</li>
         <li>React.js</li>
-        <li>Next.js</li>
         <li>TailWind css</li>
         <li>Scss</li>
       </ul>
@@ -22,7 +21,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Bsc Statistic / Computer Science</li>
+        <li>B.sc Statistic / Computer Science</li>
         <span>University of Agriculture, Makurdi, Benue State, Nigeria</span>
       </ul>
     ),
@@ -67,10 +66,10 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg">
             I am a Frontend web developer with a passion for creating
             interactive and responsive web applications. I have experience
-            working with JavaScript, React.js, Next.js, Redux, HTML, CSS, and
-            Git. I am a quick learner and I am always looking to expand my
-            knowledge and skills set. I am a team player and I am excited to
-            work with others to create amazing web applications.
+            working with JavaScript, React.js, HTML, CSS, and Git. I am a quick
+            learner and I am always looking to expand my knowledge and skills
+            set. I am a team player and I am excited to work with others to
+            create amazing web applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton

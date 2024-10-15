@@ -45,17 +45,9 @@ const projectsData = [
     gitUrl: "https://github.com/judidoko/Rental-car",
     previewUrl: "https://ija-car-rental.netlify.app/",
   },
+
   {
     id: 5,
-    title: "Movie Box",
-    description: "A website that enable user search for movies and watch",
-    image: "./images/movie-box.PNG",
-    tag: ["All", "Nextjs"],
-    gitUrl: "/",
-    previewUrl: "https://hngxmoviebox-stage2.vercel.app/",
-  },
-  {
-    id: 6,
     title: "Pig Game",
     description:
       "The Pig is a simple dice game in which two players race to reach 100 points. if a player roll 1 or 0 he loose. 2-6 the number is added the current player score. NOTE: it can only be played on laptop and desktop devices",
